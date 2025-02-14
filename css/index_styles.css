@@ -1,0 +1,473 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  color: #ffffff00;
+}
+
+
+input::placeholder {
+  font-family: Inter, sans-serif;
+  color: inherit;
+  opacity: 1;
+}
+
+hr.divider {
+  border: 0;
+  height: 1px;
+  background: #888;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Portfolio Hero Section */
+.portfolio-hero {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 100%;
+  width: 100%;
+}
+
+.hero-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 972px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bg-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1; /* Place the video behind other content */
+}
+
+.bg-hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensure the video covers the entire container */
+  object-position: center;
+}
+
+/* Intro Content */
+.intro-content {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  margin: 120px auto 0;
+  padding: 0;
+}
+
+.intro-greeting {
+  font-size: 40px;
+  font-weight: 300;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.intro-title {
+  font-size: 40px;
+  font-weight: 600;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 0 20px;
+  text-align: left;
+  color: #000000;
+}
+
+.intro-description {
+  font-size: 16px;
+  width: 100%;
+  max-width: 425px;
+  margin: 200px 0 0 auto;
+  text-align: left;
+  padding-right: 20px;
+  color: #000000;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 75px auto 0;
+  width: 100%;
+  text-align: center;
+}
+
+.mouse {
+  width: 24px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 12px;
+  position: relative;
+  animation: float 2s ease-in-out infinite;
+}
+
+.mouse-wheel {
+  width: 4px;
+  height: 8px;
+  background: #000;
+  border-radius: 2px;
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: scroll 2s infinite;
+}
+
+.scroll-text {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #000;
+  animation: fade 2s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    top: 6px;
+    opacity: 1;
+  }
+  50% {
+    top: 18px;
+    opacity: 0;
+  }
+  100% {
+    top: 6px;
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Projects Section */
+.projects-section {
+  align-self: center;
+  display: flex;
+  margin-top: 59px;
+  width: 100%;
+  max-width: 1366px;
+  flex-direction: column;
+}
+
+.project-hero-link,
+.gallery-image-link {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.project-hero-link:hover::after,
+.gallery-image-link:hover::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-radius: 40px;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+
+.project-hero-link:hover .project-hero,
+.gallery-image-link:hover .gallery-image {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.project-hero {
+  aspect-ratio: 1.64;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-header {
+  display: flex;
+  width: 100%;
+  max-width: 1331px;
+  gap: 20px;
+  font-family: Inter, sans-serif;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 12px 0 0 0;
+  position: relative;
+}
+
+.project-title,
+.project-title-one,
+.project-title-two {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.project-subtitle,
+.project-subtitle-one,
+.project-subtitle-two {
+  color: #888;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.project-gallery {
+  margin-top: 113px;
+}
+
+.gallery-grid {
+  gap: 20px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.gallery-image {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gallery-image-grad {
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 300px;
+  border-radius: 40px;
+  position: relative;
+  overflow: hidden;  
+}
+
+.project-info {
+  display: flex;
+  width: 100%;
+  max-width: 1333px;
+  gap: 20px;
+  font-family: Inter, sans-serif;
+  justify-content: space-between;
+  margin: 9px 33px 0 0;
+  align-items: flex-start;
+}
+cta-button
+.project-details,
+.project-details-one,
+.project-details-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 25px;
+  flex: 1;
+  width: 100%;
+}
+
+.project-details-two{
+  margin-left: 60px;
+}
+
+.project-year-one,
+.project-year-two {
+  color: #888;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: right;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  width: auto;
+  max-width: 200px;
+  justify-content: flex-end;
+  line-height: 1.2;
+}
+
+.cta-button {
+  border-radius: 40px;
+  background-color: #000;
+  align-self: start;
+  margin-top: 75px;
+  color: #fff;
+  padding: 13px 22px;
+  font: 400 18px Inter, sans-serif;
+}
+
+.cta-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  transform: translateY(-2px);
+}
+
+/* Updated "My graduation project" section */
+.featured-project {
+  width: 800px;
+  height: 400px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 10px 11px 30px rgba(136, 136, 136, 0.25);
+  margin: 125px auto 125px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.featured-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.featured-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  padding-left: 40px;
+}
+
+.featured-title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.featured-cta {
+  border-radius: 40px;
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.featured-cta:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.featured-image-container {
+  width: 320px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 40px;
+  background: white;
+  box-shadow: -15px 0 30px -10px rgba(0,0,0,0.15);
+  position: relative;
+  z-index: 2;
+  transform: translateX(20px);
+  margin-left: auto;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Master Project Styles */
+.master-project-header {
+  display: flex;
+  width: 100%;
+  max-width: 1331px;
+  gap: 20px;
+  font-family: Inter, sans-serif;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 12px 33px 0 0;
+  position: relative;
+}
+
+.master-project-title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 0 20px;
+}
+
+.master-project-subtitle {
+  color: #888;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 0 20px;
+}
+
+.master-project-year {
+  color: #888;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: right;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 0;
+}
+
+.contact-section {
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+}

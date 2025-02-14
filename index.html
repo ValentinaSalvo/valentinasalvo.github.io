@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentina's Portfolio</title>
+  <link rel="stylesheet" href="css/index_styles.css">
+  <link rel="stylesheet" href="css/nav_style.css">
+  <link rel="stylesheet" href="css/footer_style.css">
+</head>
+
+<body>
+  <div class="portfolio-hero">
+    <div class="hero-wrapper">
+      <div class="hero-content">
+        <div class="bg-video-container">
+          <video autoplay muted loop class="bg-hero-video">
+            <source src="./assets/img/untitled (7).webm" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="nav-container">
+          <div class="nav-wrapper">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/64cf3c8e83b0991498406f3a009b870fa3f9811e522a575aa70be158b7f5b6ef?placeholderIfAbsent=true&apiKey=d9f18e2f08124095b4e312153f56b52f" class="logo" alt="Portfolio logo" />
+            <nav class="nav-links" role="navigation" aria-label="Main navigation">
+              <a href="#home" class="nav-item home-icon active">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </a>
+              <a href="./project.html" class="nav-item">Projects</a>
+              <a href="./about.html" class="nav-item">About</a>
+            </nav>
+            <a href="https://www.linkedin.com/in/salvo-valentina" class="nav-item linkedin-icon" target="_blank" rel="noopener noreferrer">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a href="#contact" class="contact-btn">Contact</a>
+          </div>
+        </div>
+        <div class="intro-content">
+          <h1 class="intro-greeting">Hi, I'm Valentina</h1>
+          <p class="intro-title">A multidisciplinary designer focusing on<br />brand and visual design.</p>
+          <p class="intro-description">
+            I'm a set designer and props maker turned into a multidisciplinary designer, designing for print and screen
+            with a functional, minimalistic approach.
+            <br />
+            When not sitting, you can find me climbing and reading.
+          </p>
+          <div class="scroll-indicator">
+            <div class="mouse">
+              <div class="mouse-wheel"></div>
+            </div>
+            <div class="scroll-text">Scroll down</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="projects-section" id="projects">
+      <!-- Project Hero with Link -->
+      <a href="./projects/willy.html" class="project-hero-link">
+        <img loading="lazy"
+          src="./assets/img/projects/carousel/willy.png"
+          class="project-hero" alt="Willy Montini Arte project hero image" />
+      </a>
+
+      <div class="master-project-header">
+        <h2 class="master-project-title">Willy Montini Arte</h2>
+        <span class="master-project-year">2024</span>
+      </div>
+      <p class="master-project-subtitle">Brand identity/Visuals and editorials</p>
+
+      <!-- Gallery Images with Links -->
+      <div class="project-gallery">
+        <div class="gallery-grid">
+          <a href="./projects/gustovivo.html" class="gallery-image-link">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cabf87b4badaf3e815a1f1e86c15462804377864c821ce3beb6fad886b1cca13?placeholderIfAbsent=true&apiKey=d9f18e2f08124095b4e312153f56b52f"
+              class="gallery-image" alt="Willy Montini Arte gallery image 1" />
+          </a>
+
+          <a href="./projects/ecowave.html" class="gallery-image-link">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ad11592c06540da40a7e6e61ef819957a0fda2e195c7612c15da58c52465e9b?placeholderIfAbsent=true&apiKey=d9f18e2f08124095b4e312153f56b52f"
+              class="gallery-image" alt="Willy Montini Arte gallery image 2" />
+          </a>
+        </div>
+      </div>
+
+      <div class="project-info">
+        <div class="project-details-one">
+          <h3 class="project-title-one">Gusto Vivo</h3>
+          <p class="project-subtitle-one">Brand identity/Visuals, editorials and social</p>
+        </div>
+        <span class="project-year-one">2024</span>
+
+        <div class="project-details-two">
+          <h3 class="project-title-two">EcoWave</h3>
+          <p class="project-subtitle-two">Brand identity/Visuals, editorials and social</p>
+        </div>
+        <span class="project-year-two">2024</span>
+      </div>
+
+      <a href="./project.html" class="cta-button" role="button">See all my works</a>
+
+      <!-- Updated "My graduation project" section -->
+      <div class="featured-project">
+        <div class="featured-content">
+          <div class="featured-text">
+            <h3 class="featured-title">My graduation <br> project</h3>
+            <a href="./projects/graduation.html" class="cta-button" role="button">Discover it</a>
+          </div>
+          <div class="featured-image-container">
+            <img loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/cae3d95c96135618c895d1fbc52f3c95e487663af0264f026d234136af915644?placeholderIfAbsent=true&apiKey=d9f18e2f08124095b4e312153f56b52f"
+              class="featured-image" alt="Graduation project preview" />
+          </div>
+        </div>
+      </div>
+
+      <hr class="divider" />
+      <h2 class="contact-section" id="contact">Let's get in touch</h2>
+    </section>
+
+    <div class="footer-content">
+      <nav class="menu-section" role="navigation" aria-label="Footer navigation">
+        <h3 class="menu-heading">Menu</h3>
+        <a href="./index.html" class="menu-item">Home</a>
+        <a href="./project.html" class="menu-item">Projects</a>
+        <a href="./about.html" class="menu-item">About</a>
+      </nav>
+
+      <div class="contact-form" id="contact">
+        <h3 class="contact-heading">Send me a message</h3>
+        <h3 class="thank-you">valentina.salvo.ge@gmail.com</h3>
+        <form class="email-form" action="mailto:valentina.salvo.ge@gmail.com" method="post" enctype="text/plain">
+          <!-- <div class="form-group">
+            <input type="text" name="name" placeholder="Your name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Your email" required>
+          </div> -->
+          <div class="form-group">
+            <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>          
+        </form>
+      </div>
+    </div>
+    <!-- <a href="#contact" class="cta-floating" role="button">Say Hey!</a> -->
+    <div class="footer-logo-container">
+      <div class="footer-logo">
+        <span>V</span>
+        <div class="dot"></div>
+        <span>S</span>
+      </div>
+      <div class="footer-divider"></div> <!-- Divider added here -->
+      <div class="thank-you">Thank you for your time</div>
+    </div>
+  </div>
+</body>
+
+</html>

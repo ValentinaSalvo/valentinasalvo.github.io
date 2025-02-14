@@ -1,0 +1,152 @@
+/* Footer */
+.footer-content {
+  display: flex;
+  gap: 80px;
+  padding: 50px 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.menu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 100px;
+}
+
+.menu-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.menu-item {
+  color: #666;
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+  padding: 2px 0;
+  line-height: 1.2;
+  font-size: 14px;
+}
+
+.menu-item:hover {
+  opacity: 0.8;
+}
+
+.contact-form {
+  flex: 1 1 auto;
+  width: 100%;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.contact-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  margin-top: 100px;
+  max-width: 1400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.contact {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 48px;
+  font-weight: 500;
+  width: 100%;
+  color: #000000;
+}
+
+.dot {
+  width: 24px;
+  height: 24px;
+  background-color: #f66c1c;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.footer-divider {
+  width: 60%;
+  height: 1px;
+  background-color: #ccc;
+}
+
+.thank-you {
+  color: #666;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
